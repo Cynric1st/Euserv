@@ -20,6 +20,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇺🇲 美国节点
       - ☑️ 手动切换
+      - DIRECT
   - name: ☑️ 手动切换
     type: select
     proxies:
@@ -73,6 +74,15 @@ proxy-groups:
       - "CF_V12_www.visa.com.br_2087"
       - "CF_V13_www.visasoutheasteurope.com_2096"
   - name: 🇺🇲 美国节点
+    type: select
+    proxies:
+      - "tj.snake1st.eu.org"
+      - "CF_V8_usa.visa.com_443"
+      - "CF_V9_myanmar.visa.com_8443"
+      - "CF_V10_www.visa.com.tw_2053"
+      - "CF_V11_www.visaeurope.ch_2083"
+      - "CF_V12_www.visa.com.br_2087"
+      - "CF_V13_www.visasoutheasteurope.com_2096"
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
